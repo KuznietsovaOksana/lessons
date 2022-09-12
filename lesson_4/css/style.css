@@ -1,0 +1,74 @@
+body {
+	font-family: Roboto;
+}
+
+p {
+	color: brown;
+}
+
+a {
+	color: blue;
+}
+
+span {
+	color: darkred;
+	font-family: Lato;
+	font-weight: 700;
+}
+
+.title {
+	color: red;
+	font-weight: 700;
+	font-family: Larsseit;
+}
+
+.without-fonts {
+	font-family: Larsseit;
+	font-weight: 500;
+}
+
+#simple-life {
+	color: yellow;
+	font-family: Larsseit;
+}
+
+.text {
+}
+.link {
+}
+.some-work,
+.hard-work {
+	color: green;
+}
+
+.designer {
+	color: aqua;
+	font-weight: 700;
+}
+
+.some-work .text {
+	color: darkorange;
+}
+
+.some-work ul li {
+	color: violet;
+	font-family: Lato;
+	font-weight: 900;
+}
+
+.boxing {
+	color: #000;
+}
+
+.list li {
+	color: darkgray;
+}
+
+.happy-end {
+	color: orange;
+	font-family: Lato;
+}
+
+.happy-end > p {
+	color: greenyellow;
+}
