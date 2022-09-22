@@ -146,7 +146,7 @@ body {
 .homework-button {
 	display: inline-block;
 	padding: 10px 20px;
-	border-radius: 3px;
+	border-radius: 20px 0 20px 0;
 
 	font-size: 24px;
 	font-weight: 700;
@@ -154,4 +154,5 @@ body {
 
 	background-color: teal;
 	color: #ffffff;
+	box-shadow: 2px 2px 3px 5px rgb(4, 93, 93);
 }
