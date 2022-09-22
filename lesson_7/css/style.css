@@ -7,7 +7,7 @@ body {
 	margin: 15px auto;
 }
 
-.container {
+[class*="__container"] {
 	max-width: 840px;
 	margin: 0 auto;
 	padding: 0 15px;
@@ -155,4 +155,77 @@ body {
 	background-color: teal;
 	color: #ffffff;
 	box-shadow: 2px 2px 3px 5px rgb(4, 93, 93);
+}
+
+/* HOMEWORK */
+
+.homework-header__container {
+	background: teal;
+	min-height: 300px;
+	margin-bottom: 20px;
+}
+.homework-header-text {
+	padding: 10px;
+}
+.homework-header-text--first {
+	padding: 20px;
+	margin-bottom: 40px;
+	color: teal;
+	background-image: url("../img/homework-01.jpg");
+	background-repeat: repeat-x;
+	background-position: 80px 0;
+}
+.homework-header-text--second {
+	padding: 50px;
+	background-image: linear-gradient(135deg, #ebf1f6 0%, #abd3ee 50%, #89c3eb 51%, #d5ebfb 100%);
+}
+.homework-main__container {
+	color: #ffffff;
+	background-image: url("../img/homework-02.jpg");
+	background-attachment: fixed;
+	background-position: center;
+}
+.homework-main-text {
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.homework-main-text--first {
+	margin-bottom: 20px;
+}
+.homework-main-text--second {
+	margin-bottom: 20px;
+}
+.homework-main-text--third {
+}
+.homework-footer__container {
+}
+.homework-footer-text {
+	margin-bottom: 30px;
+}
+.homework-footer-text--first {
+	padding: 30px;
+	margin-bottom: 20px;
+	background-image: url("../img/homework-03.jpg");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.homework-footer-text--second {
+	padding: 50px;
+	color: #ffffff;
+	background-image: url("../img/homework-05.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.homework-footer-text--third {
+	padding: 30px;
+	margin-bottom: 30px;
+	color: #ebf1f6;
+	background: teal url("../img/homework-06.jpg") 0 0 / cover no-repeat;
+}
+.homework-footer-text--fourth {
+	padding: 30px;
+	color: #ebf1f6;
+	background: linear-gradient(120deg, rgba(50, 37, 148, 0.2) 0%, rgba(8, 50, 15, 0.8) 100%),
+		url("../img/homework-03.jpg") no-repeat right / 500px, url("../img/homework-01.jpg") no-repeat left top / 200px;
 }
