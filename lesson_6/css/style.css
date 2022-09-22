@@ -68,13 +68,13 @@ body {
 }
 .article-item {
 	padding-left: 32px;
-	padding-bottom: 4px;
+	margin-bottom: 4px;
 }
 .item-end {
 	padding-bottom: 0;
 }
 .text-fourth {
-	padding-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .footer {
