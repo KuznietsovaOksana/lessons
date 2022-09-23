@@ -24,6 +24,7 @@ body {
 	color: #1e212c;
 }
 .article {
+	margin-bottom: 60px;
 }
 .article-image {
 	width: 100%;
@@ -74,7 +75,6 @@ body {
 	padding-bottom: 0;
 }
 .text-fourth {
-	margin-bottom: 60px;
 }
 
 .footer {
