@@ -71,7 +71,11 @@ body {
 }
 
 .section-about__list li:not(:last-child) {
-	padding-bottom: 4px;
+	margin-bottom: 4px;
+}
+
+.section-curator__top {
+	margin-bottom: 32px;
 }
 
 .section-curator__top > h4 {
@@ -89,14 +93,12 @@ body {
 }
 
 .section-curator__top > p {
-	margin-bottom: 32px;
 	font-size: 20px;
 	line-height: 1.5;
 	color: #787a80;
 }
 
 .section-curator__bottom {
-	margin-bottom: 40px;
 }
 
 .section-curator__bottom ul {
@@ -147,11 +149,10 @@ body {
 	padding-bottom: 40px;
 }
 
-.homework-button {
+.homework-button a {
 	display: inline-block;
 	padding: 10px 20px;
 	border-radius: 20px 0 20px 0;
-	margin-bottom: 40px;
 
 	font-size: 24px;
 	font-weight: 700;
@@ -162,7 +163,7 @@ body {
 	box-shadow: inset 18px 18px 35px #7d3331, inset -18px -18px 35px #ff9f95;
 }
 
-.homework-button:hover {
+.homework-button a:hover {
 	background: linear-gradient(145deg, #ff706a, #e65f59);
 	box-shadow: 18px 18px 35px #7d3331, -18px -18px 35px #fe8b7f;
 }
@@ -184,9 +185,13 @@ body {
 	margin-bottom: 100px;
 }
 
+.homework__link {
+	display: inline-block;
+	padding: 30px;
+}
+
 .homework__item:not(:last-child) {
 	display: inline-block;
-	padding: 47px;
 	background: linear-gradient(145deg, #ff706a, #e65f59);
 	margin: 10px;
 	font-size: 24px;
@@ -195,7 +200,6 @@ body {
 
 .homework__item:last-child {
 	display: block;
-	padding: 30px;
 	background: linear-gradient(145deg, #ff706a, #e65f59);
 	margin: 10px;
 	font-size: 24px;
@@ -214,6 +218,7 @@ ul ul {
 .homework__item:hover ul {
 	display: block;
 	color: #ffffff;
+	padding-left: 30px;
 }
 
 .homework__link:visited {
@@ -295,7 +300,7 @@ ol li::before {
 }
 
 .experiments-link {
-	display: block;
+	display: inline-block;
 }
 
 .experiments-link:visited {
