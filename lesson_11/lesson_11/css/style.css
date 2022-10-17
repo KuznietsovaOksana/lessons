@@ -27,6 +27,7 @@ body {
 .menu__item {
 	position: relative;
 	display: inline-block;
+	padding: 10px 30px;
 }
 .menu__item:not(:last-child) {
 	margin-right: 10px;
