@@ -1,0 +1,75 @@
+.wrapper {
+	overflow: hidden;
+	min-height: 100%;
+	position: relative;
+}
+
+body {
+	background-color: rgba(252, 255, 235, 0.392);
+}
+
+.header__container {
+	padding: 30px;
+}
+
+.header__title {
+	font-size: 36px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #7a956b;
+}
+
+.doll__image {
+	position: relative;
+	background: url("../img/doll.jpg") center 0 no-repeat;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 800px;
+	height: 710px;
+	perspective: 1000px;
+	perspective-origin: 0 0;
+}
+
+.image-doll__dress--red {
+	z-index: 2;
+	position: absolute;
+	transform: translate(-200px, -230px) scale(0.2) rotateY(10deg) skew(-5deg);
+}
+
+.image-doll__dress--red:hover {
+	transform: translate(-26px, -45px) scale(0.62);
+	z-index: 3;
+}
+
+.image-doll__dress--pink {
+	z-index: 2;
+	position: absolute;
+	transform: matrix(0.2, 0, 0, 0.2, 200, -280);
+}
+
+.image-doll__dress--pink:hover {
+	transform: translate(60px, -145px) scale(0.7);
+	z-index: 3;
+}
+
+.image-doll__dress--black {
+	z-index: 2;
+	position: absolute;
+	transform: translate(55px, 300px) scale(0.4) rotateX(-10deg);
+}
+
+.image-doll__dress--black:hover {
+	transform: translate(235px, 220px) scale(1.5);
+	z-index: 3;
+}
+
+.image-doll__dress--light-pink {
+	z-index: 2;
+	position: absolute;
+	transform: translate3d(210px, 50px, 0) scale3d(0.15, 0.15, 0.15) rotate3d(1, 1, 1, 5deg);
+}
+
+.image-doll__dress--light-pink:hover {
+	transform: translate(78px, -44px) scale(0.59);
+	z-index: 3;
+}
