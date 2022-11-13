@@ -184,17 +184,8 @@
 	top: 0px;
 	right: 200px;
 	z-index: 2;
-	animation: sun 20s linear 0s infinite normal forwards;
+	animation: rotate-block 20s linear 0s infinite normal forwards;
 	transition: all 5s linear 0s;
-}
-
-@keyframes sun{
-	0%{
-		rotate: 0deg;
-	}
-	100%{
-		rotate: 360deg;
-	}
 }
 
 .img:active .img__sun{
