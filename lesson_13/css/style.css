@@ -1,0 +1,235 @@
+.wrapper{
+	overflow: hidden;
+	position: relative;
+	min-height: 100%;
+	padding: 20px;
+	background: url('../img/ocean.jpg') 0 0/100% 100% no-repeat, linear-gradient(to left, rgb(92, 48, 48), rgba(0, 0, 0, 0.645));
+}
+
+.block{
+	margin-bottom: 50px;
+}
+
+.page__text {
+	text-align: center;
+}
+
+.page__title {
+	position: relative;
+	display: inline-block;
+	color: rgb(182, 182, 208);
+	font-weight: 700;
+	font-size: 40px;
+	animation: title 2s ease 0.2s forwards;
+	transform: translate(0px, 10%);
+	opacity: 0;
+}
+.page__title:not(:last-child){
+	margin-bottom: 20px;
+}
+
+.page__title::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	left: 0;
+	height: 4px;
+	border-radius: 3px;
+	transition: width 0.3s linear 0s;
+	background-color: rgba(170, 187, 206, 0.716);
+}
+.page__title:hover::after{
+	width: 100%;
+}
+
+.page__sub-title {
+	color: rgb(161, 179, 176);
+	font-size: 28px;
+	animation: text 1s ease 0.5s forwards;
+	transform: translate(-100%, 0);
+	opacity: 0;
+}
+.page__sub-title:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.page__lorem {
+	color: rgb(6, 37, 49);
+	animation: text 1.5s ease 1s forwards;
+	line-height: 1.5;
+	transform: translate(-100%, 0);
+	opacity: 0;
+	text-align: left;
+}
+
+@keyframes title {
+	0% {
+		transform: translate(0px, -100%)
+	}
+	100% {
+		transform: translate(0px, 10%);
+		opacity: 1;
+	}
+}
+
+@keyframes text {
+	0% {
+		transform: translate(0px, -50%)
+	}
+	100% {
+		transform: translate(0px, 10%);
+		opacity: 1;
+	}
+}
+
+.heart__wrap{
+	width: 300px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.heart__wrap::before{
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0.2;
+	background-color: #000;
+	transition: opacity 0.8s ease 0s;
+	z-index: 2; 
+}
+.heart__wrap img{
+	max-width: 100%;
+	transition: transform 0.8s ease 0s;
+}
+.heart__wrap:hover img{
+	transform: scale(1.1);
+}
+.heart__wrap:hover::before {
+	opacity: 0;
+}
+
+.sun__image{
+	animation: rotate-block 5s linear infinite;
+	position: absolute;
+	top: 30%;
+	right: 10%;
+}
+
+@keyframes rotate-block {
+	0% {
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+.sun__image:hover{
+	animation-play-state: paused;
+}
+
+.circle__wrap {
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background-color: rgb(0, 255, 229);
+	transition: background-color 2s ease 0.5s;
+}
+.circle__text{
+	text-align: center;
+	font-size: 24px;
+	opacity:0;
+	transition: opacity 3s ease 1s;
+}
+
+.circle__wrap:hover .circle__text{
+	opacity: 1;
+
+}
+
+.circle:hover .circle__wrap{
+	background-color: rgb(86, 133, 96);
+}
+
+.button-block {
+	text-align: center;
+}
+
+.button {
+	cursor: pointer;
+	padding: 10px 24px;
+  border-radius: 4px;
+  border: 1px solid rgba(0,0,0,0);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: .06em;
+  background: rgb(96, 96, 146);
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  color: white;
+	transition: background-color 1s ease-in-out 0.5s;
+}
+
+.button:hover {
+	background-color: rgb(9, 9, 172);
+}
+
+.img__sun {
+	display: inline-block;
+	position: absolute;
+	top: 0px;
+	right: 200px;
+	z-index: 2;
+	animation: sun 20s linear 0s infinite normal forwards;
+	transition: all 5s linear 0s;
+}
+
+@keyframes sun{
+	0%{
+		rotate: 0deg;
+	}
+	100%{
+		rotate: 360deg;
+	}
+}
+
+.img:active .img__sun{
+	display: none;
+	animation-name: none;
+}
+
+.img__moon {
+	display: none;
+	position: absolute;
+	top: 0px;
+	right: 200px;
+	z-index: 2;
+}
+.img:active .img__moon{
+	display: block;
+}
+
+
+.ship{
+	position: absolute;
+	bottom: 0px;
+	right: 100px;
+	animation: ship 10s linear 0s infinite normal forwards;
+}
+
+.ship:hover {
+	animation-play-state: paused;
+}
+
+@keyframes ship{
+	0%{
+		right: -10%;
+	}
+	100%{
+		right: 110%;
+	}
+}
