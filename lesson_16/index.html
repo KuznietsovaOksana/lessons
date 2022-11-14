@@ -50,7 +50,7 @@
 									<input class="form__input" id="phone" autocomplete="on" name="phone" placeholder="Your phone number"
 										type="tel">
 								</div>
-								<div class="form__line form__line--area">
+								<div class="form__line">
 									<label class="form__label" for="message">Message*</label>
 									<textarea class="form__area" id="message" autocomplete="off" name="message" placeholder="Your message"
 										required></textarea>
@@ -66,6 +66,18 @@
 								<div class="form__line">
 									<button type="submit" class="form__button button"><span>Send message</span></button>
 								</div>
+							</div>
+						</form>
+						<form action="#" class="form" method="POST" enctype="multipart/form-data" action="#">
+							<div class="form__radio">
+								<input checked class="form__input form__input-radio" id="online" required autocomplete="off" value="cat"
+									name="pet" type="radio">
+								<label class="form__label form__label--radio" for="online">Online</label>
+							</div>
+							<div class="form__radio">
+								<input class="form__input form__input-radio" id="offline" required autocomplete="off" name="pet"
+									value="dog" type="radio">
+								<label class="form__label form__label--radio" for="offline">Offline</label>
 							</div>
 						</form>
 					</div>
