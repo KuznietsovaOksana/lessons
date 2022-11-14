@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 16</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header"></header>
+		<main class="page">
+			<section class="contact-us">
+				<div class="contact-us__container">
+					<div class="contact-us__image">
+						<img src="./img/form/illustration.svg" alt="Illustration">
+					</div>
+					<div class="contact-us__content">
+						<div class="contact-us__title-box title-box">
+							<h3 class="title-box__subtitle subtitle">Any questions?</h3>
+							<h2 class="title-box__title title">Drop us a line</h2>
+						</div>
+						<form action="#" class="contact-us__form form" method="POST" enctype="multipart/form-data" action="#">
+							<div class="form__menu">
+								<div class="form__line">
+									<label class="form__label" for="name">First Name*</label>
+									<input class="form__input" required id="name" autocomplete="off" name="name"
+										placeholder="Your first name" type="text">
+								</div>
+								<div class="form__line">
+									<label class="form__label" for="surname">Last Name*</label>
+									<input class="form__input" id="surname" autocomplete="off" name="surname" placeholder="Your last name"
+										type="text">
+								</div>
+								<div class="form__line">
+									<label class="form__label" for="email">Email*</label>
+									<input class="form__input" required id="email" autocomplete="on" name="email"
+										placeholder="Your working email" type="email">
+								</div>
+								<div class="form__line">
+									<label class="form__label" for="phone">Phone</label>
+									<input class="form__input" id="phone" autocomplete="on" name="phone" placeholder="Your phone number"
+										type="tel">
+								</div>
+								<div class="form__line form__line--area">
+									<label class="form__label" for="message">Message*</label>
+									<textarea class="form__area" id="message" autocomplete="off" name="message" placeholder="Your message"
+										required></textarea>
+								</div>
+							</div>
+							<div class="form__submenu">
+								<div class="form__checkbox checkbox">
+									<input class="checkbox__input" id="check" required autocomplete="off" name="check" type="checkbox">
+									<label class="checkbox__label" for="check">
+										I agree to receive communications from Createx Online School
+									</label>
+								</div>
+								<div class="form__line">
+									<button type="submit" class="form__button button"><span>Send message</span></button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
