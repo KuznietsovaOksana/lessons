@@ -772,7 +772,7 @@ body {
     position: relative;
     padding-bottom: 0;
     min-width: 214px;
-    height: 214px;
+    min-height: 214px;
   }
 }
 .cards__image img {
