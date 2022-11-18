@@ -637,6 +637,7 @@ body {
 
 .list-about__item {
   position: relative;
+  z-index: 2;
   padding-left: 32px;
   line-height: 1.6;
 }
