@@ -567,6 +567,7 @@ body {
 .about__image {
   z-index: 2;
   margin-bottom: 40px;
+  border-radius: 4px;
 }
 @media (min-width: 991.98px) {
   .about__image {
