@@ -91,30 +91,15 @@ body {
   }
 }
 
+.nav__item {
+}
+
 .nav__link {
   font-weight: 700;
   position: relative;
   display: block;
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-@media (min-width: 767.98px) {
-  .nav__link {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-}
-@media (min-width: 991.98px) {
-  .nav__link {
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
-}
-@media (min-width: 1199.98px) {
-  .nav__link {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .nav__link:after {
@@ -567,6 +552,11 @@ body {
 .about__image {
   z-index: 2;
   margin-bottom: 40px;
+}
+@media (min-width: 767.98px) {
+  .about__image {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 991.98px) {
   .about__image {
