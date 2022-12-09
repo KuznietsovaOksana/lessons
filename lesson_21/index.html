@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 21</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="#" class="header__logo">
+					Logo
+				</a>
+				<nav class="header__nav nav">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">One</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Two</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Three</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Four</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Five</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__actions actions-header">
+					<a href="#" class="actions-header__button">Button</a>
+					<a href="#" class="actions-header__button">Button</a>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<!-- VIDEO -->
+			<section class="video">
+				<div class="video__background">
+					<div class="video__info">
+						<h1>Main title</h1>
+						<p>Some text about this video</p>
+					</div>
+					<video muted autoplay loop src="media/ukraine.mp4"></video>
+				</div>
+			</section>
+			<!-- ARTICLES -->
+			<section class="block">
+				<div class="block__container">
+					<h2 class="block__title">Block with articles</h2>
+					<div class="block__items">
+						<article class="block__item item">
+							<div class="item__video">
+								<video controls preload="metadata" src="media/field.mp4">
+									<source src="media/field.mp4" type="video/mp4">
+									<source src="media/field.webm" type="video/webm">
+								</video>
+							</div>
+							<h3 class="item__title">First title</h3>
+							<p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur non
+								facere ipsa, incidunt temporibus eos ad veritatis voluptates officia? Blanditiis, modi quos quae maxime
+								commodi quo voluptate vel saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eos qui
+								corrupti expedita sit fugit voluptate saepe alias repellat, excepturi ducimus vero quos veniam. Amet
+								quae dignissimos tenetur fuga officiis!</p>
+							<a href="#" class="item__link">Read more →</a>
+						</article>
+						<article class="block__item item">
+							<div class="item__video">
+								<video controls preload="none" poster="img/poster.jpg" src="media/ukraine.mp4">
+									<source src="media/ukraine.mp4" type="video/mp4">
+									<source src="media/ukraine.mp4" type="video/webm">
+								</video>
+							</div>
+							<h3 class="item__title">Second title</h3>
+							<p class="item__text">Lorem</p>
+							<a href="#" class="item__link">Read more →</a>
+						</article>
+						<article class="block__item item">
+							<div class="item__video">
+								<iframe src="https://www.youtube.com/embed/VmY3uaflS8w"
+									title="Carol for the Charity - Antytila ft. Veryovka Ensemble & ZERNYATKO Children Folk Ensemble"
+									frameborder="0"
+									allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+									allowfullscreen></iframe>
+							</div>
+							<h3 class="item__title">Third title</h3>
+							<p class="item__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, asperiores
+								voluptate laborum eum numquam optio ad sunt.</p>
+							<a href="#" class="item__link">Read more →</a>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!-- BLOCKQUOTE -->
+			<section class="blockquote">
+				<h2 hidden>Quote</h2>
+				<div class="blockquote__container">
+					<blockquote class="blockquote__text">“Take these sunflower seeds and put them in your pockets' said one
+						Ukrainian woman to a Russian
+						soldier on her street,
+						'At least when you die, something will grow.' Others ask soldiers, 'How do you explain to your mother why
+						you are here?'
+						The soldiers are disheartened, no shock and awe, no Zelenskyy slinking off to another country, not what
+						Putin expected.”</blockquote>
+					<div class="blockquote__author">Shellen Lubin</div>
+				</div>
+			</section>
+			<!-- FIGURE -->
+			<section class="figure">
+				<div class="figure__container">
+					<h2 hidden>Figure</h2>
+					<figure>
+						<img src="/img/poster.jpg" alt="Ukrainoian girl with flag">
+						<figcaption>Ukrainian girl</figcaption>
+					</figure>
+				</div>
+			</section>
+			<!-- EVENTS -->
+			<section class="events">
+				<div class="events__container">
+					<h2 hidden>Events</h2>
+					<div class="events__block">
+						<a href="#">Lorem</a> ipsum dolor sit, amet consectetur adipisicing elit. Rerum reiciendis, placeat eos
+						dolore deleniti, similique quas dolor iste fuga ipsa labore, voluptas maxime a sint in eius tempora
+						temporibus. Quas.
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer"></footer>
+	</div>
+</body>
+
+</html>
