@@ -57,7 +57,8 @@ h2 {
   margin-bottom: 1rem;
 }
 
-p {
+p,
+div {
   margin-bottom: 1rem;
 }
 
@@ -68,6 +69,10 @@ ol li:not(:last-child) {
 span {
   color: var(--span-color);
   font-weight: 700;
+}
+
+.eye-color {
+  margin-bottom: 2rem;
 }
 
 /* ===================================== */
