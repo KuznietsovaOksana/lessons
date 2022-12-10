@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Налаштування поведінки в'юпорта -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 23</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<h1>JS homework</h1>
+				<div class="page__block">
+					<h2>Оператори JAVASCRIPT</h2>
+					<ol>
+						<li><span>Wrong!</span> Оператор + не змінює string на number, тому відбудеться конкатенація</li>
+						<li>Тут все спрацює, адже оператор * призведе string до number</li>
+						<li><span>Wrong!</span> Інкремент треба застосовувати до змінної, в інших випадках
+							завжди буде помилка</li>
+						<li><span>Wrong!</span> Тут ми використовуємо суфіксну форму запису інкременту, а тому він спрацює тільки
+							згодом. Було б правильно використати префіксну</li>
+						<li><span>Wrong!</span> !false - це буде true, число це також true, тобто вираз && спрацює і поверне останню
+							правду - 11. Далі можна не перевіряти, адже оператор || має нижчий пріорітет</li>
+						<li>Змінна name уже задана, їй присвоїли 0. Тому 0 і поверне.</li>
+					</ol>
+				</div>
+				<div class="page__block">
+					<h2>IF ELSE в JAVASCRIPT</h2>
+					<ol>
+						<li><span>Wrong!</span>Тут строге порівняння, а тому умова в if не виконається, виконається умова в else
+						</li>
+						<li>Тут нестроге порівняння, а тому вирази приведуться до number і виконається їх порівняння. Умова if
+							спрацює</li>
+						<li>Два вирази призведуться до true, а тому спрацює перша умова і повернеться true</li>
+						<li>0 призведеться до false, а тому умова не виконається. " " - тут є пробіл, а одже це не пустий рядок, і
+							призведеться до true. Тому виконається умова else</li>
+					</ol>
+				</div>
+				<div class="page__block">
+					<h2>Цикли FOR та WHILE</h2>
+					<ol>
+						<li><img src="./img/01.png" alt="Задача №1" width="400"></li>
+						<li>0 це завжди false, а тому останній результат буде 1</li>
+						<li><img src="./img/02.png" alt="Задача №3 і №4" width="400"></li>
+					</ol>
+				</div>
+				<div class="page__block">
+					<h2>Numbers в JAVASCRIPT</h2>
+					<ol>
+						<li>let numOne = Math.round((1.005 + Number.EPSILON) * 100) / 100</li>
+						<li>let valueFloat = parseFloat("135.58px");</li>
+						<li><img src="./img/03.png" alt="Задача №3" width="400"></li>
+						<li>Math.max(10, 58, 39, -150, 0)</li>
+						<li>Math.floor(58.858) або parseInt(58.858)</li>
+					</ol>
+				</div>
+				<div class="page__block">
+					<h2>Strings в JAVASCRIPT</h2>
+					<ol>
+						<li><span>Wrong!</span> Не ті кавички, треба ``</li>
+						<li><img src="./img/04.png" alt="Задача №2" width="400"></li>
+						<li><span>Wrong!</span> Оператор + не змінює string на number, тому відбудеться конкатенація</li>
+						<li>textTwo.toUpperCase()</li>
+						<li>textSlice.slice(3, 6)</li>
+						<li><span>Wrong!</span> Індексація починаєтьсяя з 0, потрібно text.includes('лан', 3)</li>
+					</ol>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
