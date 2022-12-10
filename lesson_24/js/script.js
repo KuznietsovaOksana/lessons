@@ -64,6 +64,9 @@ console.log(mainElementWidth);
 const windowWidth = window.innerWidth;
 console.log(windowWidth);
 
+const scroll = windowWidth - mainElementWidth;
+console.log(scroll);
+
 // Задача №2
 function setScrollTo() {
 	window.scrollTo({
