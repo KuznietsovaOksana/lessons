@@ -235,8 +235,14 @@ body {
 /* ----------------ARTICLES------------------- */
 
 .block {
-  padding: 4em 0;
+  padding: 2rem 0;
 }
+@media (min-width: 47.99875em) {
+  .block {
+    padding: 4rem 0;
+  }
+}
+
 .block__container {
 }
 .block__title {
@@ -345,17 +351,23 @@ body {
 
 .item__link {
   text-transform: uppercase;
-  color: var(--text-color);
+  color: var(--main-color);
   background-color: var(--accent-color);
   padding: 10px 24px;
   border-radius: 5px;
   align-self: flex-start;
+  transition: color 250ms ease 0s;
 }
 @media (min-width: 47.99875em) {
   .item__link {
     font-size: 1.25rem;
     padding: 10px 24px;
   }
+}
+
+.item__link:hover,
+.item__link:focus {
+  color: var(--text-color);
 }
 
 /* -----------------BLOCKQUOTE-------------------- */
