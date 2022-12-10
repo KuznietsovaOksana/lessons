@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Налаштування поведінки в'юпорта -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Lesson 24</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+		</header>
+		<main class="page">
+			<div class="page__container">
+				<h1>JS homework</h1>
+				<div class="page__block">
+					<h2>Функції в JAVASCRIPT</h2>
+					<ol>
+						<li>Коля буде переможцем, адже setTimeout() дозволяє запланувати запуск функції через певний час, тобто
+							поставить цю задачу в чергу, і далі піде собі спокійно виконувати код до кінця. А потім вже коли на стеку
+							викликів не буде коду, то викличеться ця функція, що чекала в черзі </li>
+						<li>Тут все ОК, function declaration можна викликати і до об'яви функції</li>
+						<li><span>Wrong!</span> Функціональний вираз (function expression) не можна викликати до місця його
+							створення</li>
+						<li>Створюємо змінну, якій потім у тілі if присваюємо функціональний вираз</li>
+					</ol>
+				</div>
+				<div class="page__block">
+					<h2>Масиви в JAVASCRIPT</h2>
+					<ol>
+						<li>Отримаємо 4, адже присвоєння масивів іде за посиланням</li>
+						<li><img src="./img/01.png" alt="Задача №2" width="400"></li>
+						<li><img src="./img/02.png" alt="Задача №3" width="400"></li>
+						<li><img src="./img/03.png" alt="Задача №4" width="400"></li>
+						<li>arrTwo не був заданий, а тому буде помилка. Якщо замість arrTwo прописати заданий масив, то тоді
+							початковим значенням буде перший елемент масиву - 9, так як інше початкове значення не було задане</li>
+					</ol>
+				</div>
+				<div class="page__block">
+					<h2>DOM</h2>
+					<div data-say-hi="yes">Привет!</div>
+					<ul>
+						<li>Корчі</li>
+						<li>Йончі</li>
+					</ul>
+					<div class="like"></div>
+					<div class="subscribe"></div>
+					<div class="like subscribe"></div>
+					<p>Із-за querySelectorAll буде помилка, якщо замість querySelectorAll буде querySelector, то li вставиться
+						у кінець першого ul перед закриваючим тегом(після всіх лішек))</p>
+				</div>
+				<div class="page__block">
+					<h2>Scroll</h2>
+					<p>Дивитись у JS</p>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+		</footer>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
